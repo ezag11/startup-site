@@ -1,0 +1,8 @@
+/* Avatar: a round profile picture.
+   Use it like this: <img src="images/..." class="avatar" alt="..."> */
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}

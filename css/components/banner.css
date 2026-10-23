@@ -1,0 +1,38 @@
+/* Banner (hero section).
+   It re-uses the container and the button components. */
+.banner {
+  background-color: var(--ink);
+  /* 1. A dark gradient above (makes the text readable),
+     2. then the background image below.
+     The path starts from THIS file: css/components/ -> ../../images/ */
+  background-image:
+    linear-gradient(-225deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 60%),
+    url(../../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 64px;
+  margin: 0px 0px 10px;
+}
+
+.banner h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  opacity: 0.85;
+  margin: 0px 0px 30px;
+}
+
+@media (max-width: 720px) {
+  .banner {
+    padding: 90px 0px;
+  }
+  .banner h1 {
+    font-size: 44px;
+  }
+}

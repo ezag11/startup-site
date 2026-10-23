@@ -1,0 +1,42 @@
+/* Cards grid (Flexbox): the cards wrap onto a new line when there is no room */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -10px;
+}
+
+.card {
+  flex-basis: 200px;
+  flex-grow: 1;
+  margin: 10px;
+  padding: 30px;
+  background-color: white;
+  border-top: 4px solid var(--gold);
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
+}
+
+.card h3 {
+  font-size: 28px;
+  margin: 0px 0px 10px;
+}
+
+.card p {
+  margin: 0px 0px 16px;
+}
+
+.card a {
+  color: var(--gold-dark);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: var(--ink);
+}

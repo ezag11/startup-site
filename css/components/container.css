@@ -1,0 +1,24 @@
+/* Container: centers the page content, responsive.
+   Media queries go from the largest to the smallest width. */
+.container {
+  width: 900px;
+  margin: 0px auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
