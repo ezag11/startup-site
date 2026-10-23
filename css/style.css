@@ -1,0 +1,66 @@
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;600&display=swap");
+
+/* Importing component files */
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+/* Colors in one place */
+:root {
+  --ink: #1c1b1f;
+  --gold: #c9a24b;
+  --gold-dark: #a9842f;
+  --paper: #faf7f2;
+}
+
+/* General style rules for fonts and colors */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+  background-color: var(--paper);
+  margin: 0px;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Page sections */
+.section {
+  padding: 80px 0px;
+}
+
+.section-title {
+  font-size: 44px;
+  margin: 0px 0px 10px;
+}
+
+.section-intro {
+  margin: 0px 0px 30px;
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--ink);
+  color: white;
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.footer p {
+  margin: 0px;
+}
